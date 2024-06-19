@@ -1,0 +1,84 @@
+.car-card {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 20px;
+  padding: 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+}
+
+.car-image-container {
+  width: 100%;
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #333;
+  border-radius: 12px 12px 0 0;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.car-specs {
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+}
+
+.car-detail {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.car-detail fa-icon {
+  margin-right: 10px;
+}
+
+.car-detail-text {
+  color: white;
+}
+
+.delete-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  outline: none;
+  transition: background-color 0.3s;
+  display: none; /* Initially hidden */
+}
+
+.car-card:hover .delete-button {
+  display: block; /* Show delete button on hover */
+}
+
+.delete-button:hover {
+  background-color: #ff6659;
+}

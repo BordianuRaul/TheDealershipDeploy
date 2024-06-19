@@ -1,0 +1,21 @@
+.network-status-container {
+  padding: 3px;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.connectionUp {
+  background-color: rgba(76, 175, 80, 0.7);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.serverConnectionDown {
+  background-color: rgba(255, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.text {
+  font-size: 14px;
+  font-weight: bold;
+}

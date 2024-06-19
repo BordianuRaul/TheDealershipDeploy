@@ -1,0 +1,20 @@
+<div class="car-card" (mouseenter)="hovered = true" (mouseleave)="hovered = false">
+  <div class="car-image-container">
+    <img src="assets/mustang.jpg" alt="Mustang" class="car-image">
+  </div>
+  <div class="car-specs">
+    <p class="car-detail">
+      <fa-icon [icon]="faCar"></fa-icon>
+      <span class="car-detail-text">{{ car.brand }}</span>
+    </p>
+    <p class="car-detail">
+      <fa-icon [icon]="faCar"></fa-icon>
+      <span class="car-detail-text">{{ car.model }}</span>
+    </p>
+    <p class="car-detail">
+      <fa-icon [icon]="faCalendarDays"></fa-icon>
+      <span class="car-detail-text">{{ car.year }}</span>
+    </p>
+  </div>
+  <app-delete-button [car]="car" class="delete-button" *ngIf="hovered"></app-delete-button>
+</div>

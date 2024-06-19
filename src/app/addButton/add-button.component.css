@@ -1,0 +1,20 @@
+.addButton {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent; /* No initial background color */
+  color: white; /* Dark text color */
+  font-size: 1.2rem; /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center; /* Center text horizontally */
+  line-height: 1; /* Center text vertically */
+  font-weight: bold;
+}
+
+.addButton:hover {
+  background-color: #256729; /* Much darker green background color on hover */
+  color: white; /* White text color on hover */
+}

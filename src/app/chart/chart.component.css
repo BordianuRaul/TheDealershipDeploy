@@ -1,0 +1,92 @@
+/* chart.component.css */
+
+:host {
+  position: relative;
+
+  max-width: 600px;
+  padding: 20px;
+  background-color: #333;
+  display: block; /* Ensure it behaves as a block element */
+  overflow: hidden; /* Ensure the chart stays within its container */
+}
+
+:host google-chart {
+  width: 100%; /* Set chart width to 100% */
+  height: calc(100% - 80px); /* Adjust height to fit within container */
+  background-color: transparent; /* Set background color to transparent */
+}
+
+:host .chart-title {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+:host ul {
+  padding: 0;
+}
+
+:host li {
+  margin-bottom: 20px;
+
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  background-color: #444;
+  position: relative;
+  padding-right: 40px;
+}
+
+:host li:hover {
+  transform: translateY(-2px);
+}
+
+:host li button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+:host .pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:host .pagination button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+:host .pagination button:hover:not([disabled]) {
+  background-color: #45a049;
+}
+
+:host .pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+:host .pagination span {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #666666;
+}
+

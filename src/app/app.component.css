@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-template-rows: auto auto; /* Two rows */
+  gap: 20px; /* Adjust spacing between elements */
+}
+
+.status-container {
+  grid-column: 3; /* Place status elements in the third column */
+  grid-row: 1; /* Place status elements in the first row */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.status-container app-server-status,
+.status-container app-network-status {
+  margin-left: 10px; /* Add margin between the two status elements */
+  width: 100px; /* Adjust width as needed */
+}
+
+.status-container app-server-status,
+.status-container app-network-status {
+  width: 100px; /* Adjust width as needed */
+}
+
+.form-container {
+  grid-column: 1; /* Place add form in the first column */
+  grid-row: 1 / span 2; /* Span two rows */
+
+}
+
+.list-container {
+  grid-column: 2; /* Place list in the second column */
+  grid-row: 1 / span 2; /* Span two rows */
+}
+
+.chart-container {
+  grid-column: 3; /* Place chart in the third column */
+  grid-row: 2; /* Place chart in the second row */
+}

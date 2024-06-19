@@ -1,0 +1,7 @@
+<div class="car-grid">
+  <div *ngFor="let car of cars"  class="car-grid-item">
+    <button class="car-button" (click)="selectCar(car); moveToUpdateACarPage()">
+      <app-car [car]="car"></app-car>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="modal" [ngClass]="{'show': isVisible}" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close" (click)="closeModal()">&times;</button>
+    <app-chart></app-chart>
+  </div>
+</div>

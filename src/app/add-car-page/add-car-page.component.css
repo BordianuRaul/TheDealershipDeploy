@@ -1,0 +1,21 @@
+.topBar {
+  height: 5%;
+}
+
+.leftBar {
+  position: fixed;
+  height: 100%;
+}
+
+.content {
+  margin-left: 200px; /* Adjust according to the width of the leftBar */
+  padding: 10px;
+  overflow: auto;
+  resize: horizontal;
+  min-width: 200px; /* Minimum width to ensure usability */
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+}

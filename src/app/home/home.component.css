@@ -1,0 +1,11 @@
+.leftBar{
+  position: fixed;
+  height: 100%;
+}
+
+
+.content{
+  margin-left: 150px;
+  padding: 20px;
+}
+

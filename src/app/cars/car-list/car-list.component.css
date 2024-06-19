@@ -1,0 +1,37 @@
+.car-grid {
+  margin-top: 2%;
+  display: grid;
+  gap: 20px; /* Adjust the gap between grid items as needed */
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Adjust minmax value to control the item width */
+}
+
+.car-grid-item {
+  border-radius: 16px; /* Adjust border radius as needed */
+  overflow: hidden; /* Ensure content doesn't overflow the grid item */
+  transition: transform 0.2s; /* Add a hover effect for better UX */
+  padding: 20px; /* Adjust padding inside the grid item */
+  text-align: center; /* Optional: Center content horizontally */
+}
+
+.car-grid-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.car-button {
+
+  width: 100%; /* Full width of the parent .car-grid-item */
+  height: 100%; /* Full height of the parent .car-grid-item */
+  background-color: transparent;
+  border: none; /* Remove default button border */
+  cursor: pointer;
+  border-radius: 16px; /* Adjust border radius as needed */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition for transform and box-shadow */
+}
+
+.car-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.car-button:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}

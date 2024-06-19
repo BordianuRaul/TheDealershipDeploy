@@ -1,0 +1,63 @@
+.sideBar {
+  margin-top: 45%;
+  background-color: black;
+  color: white;
+  width: 150px; /* Adjust width as needed */
+  min-width: 150px; /* Add this line */
+  height: 100%; /* Full viewport height */
+  position: relative;/* Fixed position to stay on the left */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0; /* Add this line */
+}
+
+.sideBar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sideBar li {
+  width: 100%;
+}
+
+.sideBar button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem; /* Increase font size */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  text-align: left; /* Align text to the left */
+  font-weight: bold;
+  padding: 1.5rem; /* Increase padding */
+}
+
+.sideBar button:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+.content {
+  margin-left: 300px; /* Ensure content starts after the sidebar */
+  padding: 20px; /* Adjust padding as needed */
+}
+.btn-generate-chart {
+  padding: 10px 15px; /* Add padding for spacing between icon and text */
+  font-size: 16px; /* Adjust font size as needed */
+  display: flex;
+  align-items: center;
+}
+
+/* Icon styling */
+.icon {
+  font-size: 24px; /* Increase this value to make the icon bigger */
+  margin-right: 8px; /* Space between icon and text */
+  display: flex;
+  align-items: center;
+}

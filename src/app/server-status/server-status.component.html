@@ -1,0 +1,3 @@
+<div [ngClass]="{'connectionUp': isConnected, 'serverConnectionDown': !isConnected}">
+  <p class="text">{{ isConnected ? 'Server is up!' : 'Server is down!' }}</p>
+</div>

@@ -1,0 +1,3 @@
+<div [ngClass]="{'connectionUp': isConnected, 'serverConnectionDown': !isConnected}" class="network-status-container">
+  <p class="text">{{ isConnected ? 'Network is up!' : 'Network is down!' }}</p>
+</div>

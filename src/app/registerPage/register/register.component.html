@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="left-panel">
+    <div class="title-background">
+      <h1>
+        The
+        <br />
+        Dealership
+      </h1>
+    </div>
+  </div>
+  <div class="right-panel">
+    <form class="login-form" [formGroup]="registerForm" (ngSubmit)="onSubmitRegisterForm()">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter you username" formControlName="username" required>
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter your email" formControlName="email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" formControlName="password" required />
+      <div class="button-group">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</div>

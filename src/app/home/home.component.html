@@ -1,0 +1,16 @@
+
+<div class="body">
+
+  <div class="topBar">
+    <app-top-bar></app-top-bar>
+  </div>
+
+  <div class="leftBar">
+    <app-left-side-nav-bar></app-left-side-nav-bar>
+  </div>
+  <div class="content">
+    <app-car-list></app-car-list>
+  </div>
+</div>
+
+<app-modal [isVisible]="isChartModalVisible" (close)="closeChartModal()"></app-modal>

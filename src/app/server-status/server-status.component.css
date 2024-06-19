@@ -1,0 +1,27 @@
+.connectionUp, .serverConnectionDown {
+  padding: 12px 20px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  border-right: 1px solid white; /* Add a right border */
+
+}
+
+.connectionUp {
+  color: white;
+}
+
+.serverConnectionDown {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.text{
+  font-size: 14px;
+  font-weight: bold;
+}
